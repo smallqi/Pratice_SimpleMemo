@@ -12,14 +12,14 @@
 @implementation NoteManage
 
 //插入
--(NSMutableArray*)createNote:(Note*)model {
++(NSMutableArray*)createNote:(Note*)model {
     NoteDAO* dao = [NoteDAO shareManager];
     [dao creat:model];
     
     return [dao findAll];
 }
 //删除
--(NSMutableArray*)remove:(Note*)model {
++(NSMutableArray*)remove:(Note*)model {
     NoteDAO* dao = [NoteDAO shareManager];
     [dao remove:model];
     
@@ -27,10 +27,17 @@
 
 }
 //查询
--(NSMutableArray*)findAll {
++(NSMutableArray*)findAll {
     NoteDAO* dao = [NoteDAO shareManager];
     return [dao findAll];
 
+}
+//修改
++(NSMutableArray*)modify:(Note*)model {
+    NoteDAO* dao = [NoteDAO shareManager];
+    [dao modify:model];
+    
+    return [dao findAll];
 }
 
 @end

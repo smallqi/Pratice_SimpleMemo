@@ -12,10 +12,12 @@
 @interface NoteManage : NSObject
 
 //插入
--(NSMutableArray*)createNote:(Note*)model;
++(NSMutableArray*)createNote:(Note*)model;
 //删除
--(NSMutableArray*)remove:(Note*)model;
++(NSMutableArray*)remove:(Note*)model;
 //查询
--(NSMutableArray*)findAll;
++(NSMutableArray*)findAll;
+//修改
++(NSMutableArray*)modify:(Note*)model;
 
 @end

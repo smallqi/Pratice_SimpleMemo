@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331FB9541F106A6E00646EAE /* MemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FB9531F106A6E00646EAE /* MemoTableViewController.m */; };
+		331FB9571F106E5700646EAE /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FB9561F106E5700646EAE /* EditViewController.m */; };
+		331FB9591F1102E300646EAE /* Note.plist in Resources */ = {isa = PBXBuildFile; fileRef = 331FB9581F1102E300646EAE /* Note.plist */; };
 		33E52AD71F0FB4BC00390DF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AD61F0FB4BC00390DF2 /* main.m */; };
 		33E52ADA1F0FB4BC00390DF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AD91F0FB4BC00390DF2 /* AppDelegate.m */; };
-		33E52ADD1F0FB4BC00390DF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52ADC1F0FB4BC00390DF2 /* ViewController.m */; };
 		33E52AE01F0FB4BC00390DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E52ADE1F0FB4BC00390DF2 /* Main.storyboard */; };
 		33E52AE21F0FB4BC00390DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E52AE11F0FB4BC00390DF2 /* Assets.xcassets */; };
 		33E52AE51F0FB4BC00390DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E52AE31F0FB4BC00390DF2 /* LaunchScreen.storyboard */; };
@@ -19,12 +21,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331FB9521F106A6E00646EAE /* MemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoTableViewController.h; sourceTree = "<group>"; };
+		331FB9531F106A6E00646EAE /* MemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoTableViewController.m; sourceTree = "<group>"; };
+		331FB9551F106E5700646EAE /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		331FB9561F106E5700646EAE /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		331FB9581F1102E300646EAE /* Note.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Note.plist; path = MemoPractice/Data/Note.plist; sourceTree = "<group>"; };
 		33E52AD21F0FB4BC00390DF2 /* MemoPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E52AD61F0FB4BC00390DF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33E52AD81F0FB4BC00390DF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33E52AD91F0FB4BC00390DF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		33E52ADB1F0FB4BC00390DF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		33E52ADC1F0FB4BC00390DF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		33E52ADF1F0FB4BC00390DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33E52AE11F0FB4BC00390DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33E52AE41F0FB4BC00390DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,8 +76,10 @@
 			children = (
 				33E52AD81F0FB4BC00390DF2 /* AppDelegate.h */,
 				33E52AD91F0FB4BC00390DF2 /* AppDelegate.m */,
-				33E52ADB1F0FB4BC00390DF2 /* ViewController.h */,
-				33E52ADC1F0FB4BC00390DF2 /* ViewController.m */,
+				331FB9521F106A6E00646EAE /* MemoTableViewController.h */,
+				331FB9531F106A6E00646EAE /* MemoTableViewController.m */,
+				331FB9551F106E5700646EAE /* EditViewController.h */,
+				331FB9561F106E5700646EAE /* EditViewController.m */,
 				33E52ADE1F0FB4BC00390DF2 /* Main.storyboard */,
 				33E52AE11F0FB4BC00390DF2 /* Assets.xcassets */,
 				33E52AE31F0FB4BC00390DF2 /* LaunchScreen.storyboard */,
@@ -123,6 +130,7 @@
 			children = (
 				33E52AF51F0FC12900390DF2 /* NoteDAO.h */,
 				33E52AF61F0FC12900390DF2 /* NoteDAO.m */,
+				331FB9581F1102E300646EAE /* Note.plist */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 			files = (
 				33E52AE51F0FB4BC00390DF2 /* LaunchScreen.storyboard in Resources */,
 				33E52AE21F0FB4BC00390DF2 /* Assets.xcassets in Resources */,
+				331FB9591F1102E300646EAE /* Note.plist in Resources */,
 				33E52AE01F0FB4BC00390DF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,8 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E52AF71F0FC12900390DF2 /* NoteDAO.m in Sources */,
-				33E52ADD1F0FB4BC00390DF2 /* ViewController.m in Sources */,
+				331FB9541F106A6E00646EAE /* MemoTableViewController.m in Sources */,
 				33E52AFA1F0FCAD000390DF2 /* NoteManage.m in Sources */,
+				331FB9571F106E5700646EAE /* EditViewController.m in Sources */,
 				33E52ADA1F0FB4BC00390DF2 /* AppDelegate.m in Sources */,
 				33E52AD71F0FB4BC00390DF2 /* main.m in Sources */,
 				33E52AF41F0FBFB500390DF2 /* Note.m in Sources */,

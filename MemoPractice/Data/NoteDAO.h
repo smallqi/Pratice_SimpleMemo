@@ -10,8 +10,6 @@
 #import "Note.h"
 @interface NoteDAO : NSObject
 
-@property(nonatomic, strong)NSMutableArray* listData;   //暂时用数组表示一个数据库
-
 //实例方法，全局返回一个单例DAO
 +(NoteDAO*)shareManager;
 //插入
