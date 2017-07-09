@@ -27,5 +27,17 @@
     }
     return self;
 }
-
+//对象归档方法
+#pragma mark - NSCoding
+//序列化对象
+-(void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.date forKey:@"date"];
+    [aCoder encodeObject:self.content forKey:@"content"];
+}
+//反序列化对象
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    self.date = [aDecoder decodeObjectForKey:@"date"];
+    self.content = [aDecoder decodeObjectForKey:@"content"];
+    return self;
+}
 @end

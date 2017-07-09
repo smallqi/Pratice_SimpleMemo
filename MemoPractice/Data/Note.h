@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Note : NSObject
+@interface Note : NSObject<NSCoding>
 
 @property(nonatomic, strong)NSDate* date;
 @property(nonatomic, strong)NSString* content;

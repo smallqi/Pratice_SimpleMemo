@@ -18,6 +18,7 @@
 		33E52AF41F0FBFB500390DF2 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AF31F0FBFB500390DF2 /* Note.m */; };
 		33E52AF71F0FC12900390DF2 /* NoteDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AF61F0FC12900390DF2 /* NoteDAO.m */; };
 		33E52AFA1F0FCAD000390DF2 /* NoteManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AF91F0FCAD000390DF2 /* NoteManage.m */; };
+		33E9E9991F11EFEC0087597E /* NoteDAO_Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9E9981F11EFEC0087597E /* NoteDAO_Encode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		33E52AF61F0FC12900390DF2 /* NoteDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDAO.m; path = MemoPractice/Data/NoteDAO.m; sourceTree = "<group>"; };
 		33E52AF81F0FCAD000390DF2 /* NoteManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteManage.h; path = MemoPractice/BL/NoteManage.h; sourceTree = "<group>"; };
 		33E52AF91F0FCAD000390DF2 /* NoteManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteManage.m; path = MemoPractice/BL/NoteManage.m; sourceTree = "<group>"; };
+		33E9E9971F11EFEC0087597E /* NoteDAO_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteDAO_Encode.h; path = MemoPractice/Data/NoteDAO_Encode.h; sourceTree = "<group>"; };
+		33E9E9981F11EFEC0087597E /* NoteDAO_Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDAO_Encode.m; path = MemoPractice/Data/NoteDAO_Encode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +113,8 @@
 		33E52AED1F0FBD1600390DF2 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
-				33E52AEF1F0FBEC600390DF2 /* DAO */,
+				33E9E9961F11EF3B0087597E /* DAOWithEncode */,
+				33E52AEF1F0FBEC600390DF2 /* DAOWithPlist */,
 				33E52AEE1F0FBEB100390DF2 /* Model */,
 			);
 			name = DataLayer;
@@ -125,14 +129,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		33E52AEF1F0FBEC600390DF2 /* DAO */ = {
+		33E52AEF1F0FBEC600390DF2 /* DAOWithPlist */ = {
 			isa = PBXGroup;
 			children = (
 				33E52AF51F0FC12900390DF2 /* NoteDAO.h */,
 				33E52AF61F0FC12900390DF2 /* NoteDAO.m */,
 				331FB9581F1102E300646EAE /* Note.plist */,
 			);
-			name = DAO;
+			name = DAOWithPlist;
+			sourceTree = "<group>";
+		};
+		33E9E9961F11EF3B0087597E /* DAOWithEncode */ = {
+			isa = PBXGroup;
+			children = (
+				33E9E9971F11EFEC0087597E /* NoteDAO_Encode.h */,
+				33E9E9981F11EFEC0087597E /* NoteDAO_Encode.m */,
+			);
+			name = DAOWithEncode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +222,7 @@
 			files = (
 				33E52AF71F0FC12900390DF2 /* NoteDAO.m in Sources */,
 				331FB9541F106A6E00646EAE /* MemoTableViewController.m in Sources */,
+				33E9E9991F11EFEC0087597E /* NoteDAO_Encode.m in Sources */,
 				33E52AFA1F0FCAD000390DF2 /* NoteManage.m in Sources */,
 				331FB9571F106E5700646EAE /* EditViewController.m in Sources */,
 				33E52ADA1F0FB4BC00390DF2 /* AppDelegate.m in Sources */,
