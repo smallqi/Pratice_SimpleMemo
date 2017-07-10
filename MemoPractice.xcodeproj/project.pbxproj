@@ -10,6 +10,7 @@
 		331FB9541F106A6E00646EAE /* MemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FB9531F106A6E00646EAE /* MemoTableViewController.m */; };
 		331FB9571F106E5700646EAE /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FB9561F106E5700646EAE /* EditViewController.m */; };
 		331FB9591F1102E300646EAE /* Note.plist in Resources */ = {isa = PBXBuildFile; fileRef = 331FB9581F1102E300646EAE /* Note.plist */; };
+		33D541391F130BBA001DC825 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D541381F130BBA001DC825 /* libsqlite3.0.tbd */; };
 		33E52AD71F0FB4BC00390DF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AD61F0FB4BC00390DF2 /* main.m */; };
 		33E52ADA1F0FB4BC00390DF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AD91F0FB4BC00390DF2 /* AppDelegate.m */; };
 		33E52AE01F0FB4BC00390DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E52ADE1F0FB4BC00390DF2 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		33E52AF71F0FC12900390DF2 /* NoteDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AF61F0FC12900390DF2 /* NoteDAO.m */; };
 		33E52AFA1F0FCAD000390DF2 /* NoteManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AF91F0FCAD000390DF2 /* NoteManage.m */; };
 		33E9E9991F11EFEC0087597E /* NoteDAO_Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9E9981F11EFEC0087597E /* NoteDAO_Encode.m */; };
+		33E9E9B11F12206B0087597E /* NoteDAO_Sqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9E9B01F12206B0087597E /* NoteDAO_Sqlite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		331FB9551F106E5700646EAE /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		331FB9561F106E5700646EAE /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		331FB9581F1102E300646EAE /* Note.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Note.plist; path = MemoPractice/Data/Note.plist; sourceTree = "<group>"; };
+		33D541381F130BBA001DC825 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		33E52AD21F0FB4BC00390DF2 /* MemoPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E52AD61F0FB4BC00390DF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33E52AD81F0FB4BC00390DF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +46,8 @@
 		33E52AF91F0FCAD000390DF2 /* NoteManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteManage.m; path = MemoPractice/BL/NoteManage.m; sourceTree = "<group>"; };
 		33E9E9971F11EFEC0087597E /* NoteDAO_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteDAO_Encode.h; path = MemoPractice/Data/NoteDAO_Encode.h; sourceTree = "<group>"; };
 		33E9E9981F11EFEC0087597E /* NoteDAO_Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDAO_Encode.m; path = MemoPractice/Data/NoteDAO_Encode.m; sourceTree = "<group>"; };
+		33E9E9AF1F12206B0087597E /* NoteDAO_Sqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteDAO_Sqlite.h; path = MemoPractice/Data/NoteDAO_Sqlite.h; sourceTree = "<group>"; };
+		33E9E9B01F12206B0087597E /* NoteDAO_Sqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDAO_Sqlite.m; path = MemoPractice/Data/NoteDAO_Sqlite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +55,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D541391F130BBA001DC825 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33D541371F130BBA001DC825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33D541381F130BBA001DC825 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		33E52AC91F0FB4BC00390DF2 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +77,7 @@
 				33E52AEC1F0FBD0300390DF2 /* BusinessLogicLayer */,
 				33E52AD41F0FB4BC00390DF2 /* ViewLayer */,
 				33E52AD31F0FB4BC00390DF2 /* Products */,
+				33D541371F130BBA001DC825 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +128,7 @@
 		33E52AED1F0FBD1600390DF2 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				33E9E9AE1F1220370087597E /* DAOWithSqlite */,
 				33E9E9961F11EF3B0087597E /* DAOWithEncode */,
 				33E52AEF1F0FBEC600390DF2 /* DAOWithPlist */,
 				33E52AEE1F0FBEB100390DF2 /* Model */,
@@ -146,6 +162,15 @@
 				33E9E9981F11EFEC0087597E /* NoteDAO_Encode.m */,
 			);
 			name = DAOWithEncode;
+			sourceTree = "<group>";
+		};
+		33E9E9AE1F1220370087597E /* DAOWithSqlite */ = {
+			isa = PBXGroup;
+			children = (
+				33E9E9AF1F12206B0087597E /* NoteDAO_Sqlite.h */,
+				33E9E9B01F12206B0087597E /* NoteDAO_Sqlite.m */,
+			);
+			name = DAOWithSqlite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +249,7 @@
 				331FB9541F106A6E00646EAE /* MemoTableViewController.m in Sources */,
 				33E9E9991F11EFEC0087597E /* NoteDAO_Encode.m in Sources */,
 				33E52AFA1F0FCAD000390DF2 /* NoteManage.m in Sources */,
+				33E9E9B11F12206B0087597E /* NoteDAO_Sqlite.m in Sources */,
 				331FB9571F106E5700646EAE /* EditViewController.m in Sources */,
 				33E52ADA1F0FB4BC00390DF2 /* AppDelegate.m in Sources */,
 				33E52AD71F0FB4BC00390DF2 /* main.m in Sources */,
