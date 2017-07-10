@@ -11,6 +11,9 @@
 		331FB9571F106E5700646EAE /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FB9561F106E5700646EAE /* EditViewController.m */; };
 		331FB9591F1102E300646EAE /* Note.plist in Resources */ = {isa = PBXBuildFile; fileRef = 331FB9581F1102E300646EAE /* Note.plist */; };
 		33D541391F130BBA001DC825 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D541381F130BBA001DC825 /* libsqlite3.0.tbd */; };
+		33D5415B1F135C80001DC825 /* CoreDataNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33D541591F135C80001DC825 /* CoreDataNotes.xcdatamodeld */; };
+		33D5416F1F139930001DC825 /* CoreDataDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D5416C1F139930001DC825 /* CoreDataDAO.m */; };
+		33D541731F139963001DC825 /* NoteDAO_CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D541721F139963001DC825 /* NoteDAO_CoreData.m */; };
 		33E52AD71F0FB4BC00390DF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AD61F0FB4BC00390DF2 /* main.m */; };
 		33E52ADA1F0FB4BC00390DF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E52AD91F0FB4BC00390DF2 /* AppDelegate.m */; };
 		33E52AE01F0FB4BC00390DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E52ADE1F0FB4BC00390DF2 /* Main.storyboard */; };
@@ -30,6 +33,12 @@
 		331FB9561F106E5700646EAE /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		331FB9581F1102E300646EAE /* Note.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Note.plist; path = MemoPractice/Data/Note.plist; sourceTree = "<group>"; };
 		33D541381F130BBA001DC825 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		33D5413E1F135B58001DC825 /* CoraDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoraDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D5415A1F135C80001DC825 /* CoreDataNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataNotes.xcdatamodel; sourceTree = "<group>"; };
+		33D5416B1F139930001DC825 /* CoreDataDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataDAO.h; path = "../../《iOS开发指南第4版》代码/code/ch12/12.5.3~12.5.6/ObjC/MyNotesWorkspace/PersistenceLayer/PersistenceLayer/dao/CoreDataDAO.h"; sourceTree = "<group>"; };
+		33D5416C1F139930001DC825 /* CoreDataDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataDAO.m; path = "../../《iOS开发指南第4版》代码/code/ch12/12.5.3~12.5.6/ObjC/MyNotesWorkspace/PersistenceLayer/PersistenceLayer/dao/CoreDataDAO.m"; sourceTree = "<group>"; };
+		33D541711F139963001DC825 /* NoteDAO_CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteDAO_CoreData.h; path = MemoPractice/Data/NoteDAO_CoreData.h; sourceTree = "<group>"; };
+		33D541721F139963001DC825 /* NoteDAO_CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDAO_CoreData.m; path = MemoPractice/Data/NoteDAO_CoreData.m; sourceTree = "<group>"; };
 		33E52AD21F0FB4BC00390DF2 /* MemoPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E52AD61F0FB4BC00390DF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33E52AD81F0FB4BC00390DF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33D5413B1F135B58001DC825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33E52ACF1F0FB4BC00390DF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +86,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		33D541581F135C42001DC825 /* DAOWithCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				33D5416B1F139930001DC825 /* CoreDataDAO.h */,
+				33D5416C1F139930001DC825 /* CoreDataDAO.m */,
+				33D541711F139963001DC825 /* NoteDAO_CoreData.h */,
+				33D541721F139963001DC825 /* NoteDAO_CoreData.m */,
+				33D541591F135C80001DC825 /* CoreDataNotes.xcdatamodeld */,
+			);
+			name = DAOWithCoreData;
+			sourceTree = "<group>";
+		};
 		33E52AC91F0FB4BC00390DF2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				33E52AD21F0FB4BC00390DF2 /* MemoPractice.app */,
+				33D5413E1F135B58001DC825 /* CoraDataTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +157,7 @@
 		33E52AED1F0FBD1600390DF2 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				33D541581F135C42001DC825 /* DAOWithCoreData */,
 				33E9E9AE1F1220370087597E /* DAOWithSqlite */,
 				33E9E9961F11EF3B0087597E /* DAOWithEncode */,
 				33E52AEF1F0FBEC600390DF2 /* DAOWithPlist */,
@@ -176,6 +206,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		33D5413D1F135B58001DC825 /* CoraDataTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D541551F135B58001DC825 /* Build configuration list for PBXNativeTarget "CoraDataTest" */;
+			buildPhases = (
+				33D5413A1F135B58001DC825 /* Sources */,
+				33D5413B1F135B58001DC825 /* Frameworks */,
+				33D5413C1F135B58001DC825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoraDataTest;
+			productName = CoraDataTest;
+			productReference = 33D5413E1F135B58001DC825 /* CoraDataTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 		33E52AD11F0FB4BC00390DF2 /* MemoPractice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33E52AE91F0FB4BC00390DF2 /* Build configuration list for PBXNativeTarget "MemoPractice" */;
@@ -202,8 +249,13 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = BlackApple;
 				TargetAttributes = {
+					33D5413D1F135B58001DC825 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					33E52AD11F0FB4BC00390DF2 = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -222,11 +274,19 @@
 			projectRoot = "";
 			targets = (
 				33E52AD11F0FB4BC00390DF2 /* MemoPractice */,
+				33D5413D1F135B58001DC825 /* CoraDataTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		33D5413C1F135B58001DC825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33E52AD01F0FB4BC00390DF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +301,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33D5413A1F135B58001DC825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33E52ACE1F0FB4BC00390DF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,8 +319,11 @@
 				33E9E9B11F12206B0087597E /* NoteDAO_Sqlite.m in Sources */,
 				331FB9571F106E5700646EAE /* EditViewController.m in Sources */,
 				33E52ADA1F0FB4BC00390DF2 /* AppDelegate.m in Sources */,
+				33D5415B1F135C80001DC825 /* CoreDataNotes.xcdatamodeld in Sources */,
 				33E52AD71F0FB4BC00390DF2 /* main.m in Sources */,
 				33E52AF41F0FBFB500390DF2 /* Note.m in Sources */,
+				33D5416F1F139930001DC825 /* CoreDataDAO.m in Sources */,
+				33D541731F139963001DC825 /* NoteDAO_CoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +349,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33D541561F135B58001DC825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoraDataTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littleqi.CoraDataTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33D541571F135B58001DC825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoraDataTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littleqi.CoraDataTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		33E52AE71F0FB4BC00390DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,10 +465,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MemoPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.littleqi.MemoPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoPractice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -384,16 +480,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MemoPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.littleqi.MemoPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoPractice-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33D541551F135B58001DC825 /* Build configuration list for PBXNativeTarget "CoraDataTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D541561F135B58001DC825 /* Debug */,
+				33D541571F135B58001DC825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		33E52ACD1F0FB4BC00390DF2 /* Build configuration list for PBXProject "MemoPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -413,6 +520,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		33D541591F135C80001DC825 /* CoreDataNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				33D5415A1F135C80001DC825 /* CoreDataNotes.xcdatamodel */,
+			);
+			currentVersion = 33D5415A1F135C80001DC825 /* CoreDataNotes.xcdatamodel */;
+			name = CoreDataNotes.xcdatamodeld;
+			path = MemoPractice/Data/CoreDataNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 33E52ACA1F0FB4BC00390DF2 /* Project object */;
 }

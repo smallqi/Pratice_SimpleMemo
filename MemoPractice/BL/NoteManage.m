@@ -10,8 +10,9 @@
 #import "NoteDAO.h"
 #import "NoteDAO_Encode.h"
 #import "NoteDAO_Sqlite.h"
+#import "NoteDAO_CoreData.h"
 
-#define  dataType 3
+#define  dataType 4
 
 @implementation NoteManage
 
@@ -31,6 +32,10 @@
     }else if(dataType == 3){
         //sqlite
         NoteDAO_Sqlite* dao = [NoteDAO_Sqlite shareManager];
+        [dao creat:model];
+        return [dao findAll];
+    }else if(dataType == 4){
+        NoteDAO_CoreData* dao = [NoteDAO_CoreData shareManager];
         [dao creat:model];
         return [dao findAll];
     }
@@ -55,6 +60,10 @@
         NoteDAO_Sqlite* dao = [NoteDAO_Sqlite shareManager];
         [dao remove:model];
         return [dao findAll];
+    }else if(dataType == 4){
+        NoteDAO_CoreData* dao = [NoteDAO_CoreData shareManager];
+        [dao remove:model];
+        return [dao findAll];
     }
 
 }
@@ -72,6 +81,9 @@
     }else if(dataType == 3){
         //sqlite
         NoteDAO_Sqlite* dao = [NoteDAO_Sqlite shareManager];
+        return [dao findAll];
+    }else if(dataType == 4){
+        NoteDAO_CoreData* dao = [NoteDAO_CoreData shareManager];
         return [dao findAll];
     }
 
@@ -92,6 +104,10 @@
     }else if(dataType == 3){
         //sqlite
         NoteDAO_Sqlite* dao = [NoteDAO_Sqlite shareManager];
+        [dao modify:model];
+        return [dao findAll];
+    }else if(dataType == 4){
+        NoteDAO_CoreData* dao = [NoteDAO_CoreData shareManager];
         [dao modify:model];
         return [dao findAll];
     }
